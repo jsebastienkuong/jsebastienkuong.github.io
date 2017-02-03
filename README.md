@@ -1,2 +1,2 @@
-# jsebastienkuong.gtihub.io
+# jsebastienkuong.github.io
 Electif IF
