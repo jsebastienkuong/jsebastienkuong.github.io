@@ -1,8 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+  
+<script>
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+        var myObj = this.responseText;
+        var jsonPretty = JSON.stringify(JSON.parse(myObj),null,2);
+        document.getElementById("demo").innerHTML = jsonPretty;
+    }
+};
+xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
+xmlhttp.send();
+ </script>
+  
 <body>
-<h1 style="color: pink;"> BTC </h1>
-<p style="color: grey;"> Bitcoin </p>
+<h1 style="color: yellow;"> BTC </h1>
+<p style="color: grey;"> TP Ingenierie Financiere </p>
 <img src="http://www.neoweb.fr/mag/wp-content/uploads/2011/05/bitcoin-logo.png" alt="BTC">
 </body>
 </html>
