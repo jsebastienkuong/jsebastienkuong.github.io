@@ -6,5 +6,5 @@ if (this.readyState == 4 && this.status == 200) {
         document.getElementById("demo").innerHTML = jsonPretty;
     }
 };
-xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
+xmlhttp.open("GET", "http://bitcoin.mubiz.com/blocks", true);
 xmlhttp.send();
